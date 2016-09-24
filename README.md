@@ -6,17 +6,21 @@ A simple page pre-loader built using vanilla JS and CSS3. Please check the [demo
 
 Just 2 steps!
 
-1) Include the *waiter.css* file in the &lt;head&gt;
+1) Copy everything from *waiter.css* and drop it in a &lt;style&gt; element under &lt;head&gt;.
 
 ```html
-<link rel="stylesheet" href="waiter.css>
+<style>
+    [content from waiter.css]
+</style>
 ```
 
-2) Include the *waiter.js* file as the first child of the &lt;body&gt;
+2) Copy everything from *waiter.js* and drop it in a &lt;script&gt; element that should be the first child of the &lt;body&gt;.
 
 ```html
 <body>
-    <script src="waiter.js"></script>
+    <script>
+        [content from waiter.js]
+    </script>
     [...other content]
 </body>
 ```
@@ -28,7 +32,7 @@ Just 2 steps!
 You can pass this option as an attribute in the &lt;script&gt; tag.
 
 ```html
-<script src="waiter.js" data-manual="true"></script>
+<script data-manual="true">[...]</script>
 ```
 
 You can change the base64 logo image and customize the background color of the waiter and progress bar by modifying the below variables in *waiter.scss* file. You can convert SCSS to CSS online from [here](http://beautifytools.com/scss-compiler.php).
