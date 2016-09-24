@@ -6,7 +6,9 @@ A simple page pre-loader built using vanilla JS and CSS3. Please check the [demo
 
 Just 2 steps!
 
-1) Copy everything from *waiter.css* and drop it in a &lt;style&gt; element under &lt;head&gt;.
+1) Copy everything from *waiter.css* and drop it inline with &lt;style&gt; element under &lt;head&gt;.
+
+it in a &lt;style&gt; element under &lt;head&gt;.
 
 ```html
 <style>
@@ -14,7 +16,7 @@ Just 2 steps!
 </style>
 ```
 
-2) Copy everything from *waiter.js* and drop it in a &lt;script&gt; element that should be the first child of the &lt;body&gt;.
+2) Copy everything from *waiter.js* and drop it inline with &lt;script&gt; element and it should be the first child of the &lt;body&gt;.
 
 ```html
 <body>
@@ -24,6 +26,8 @@ Just 2 steps!
     [...other content]
 </body>
 ```
+
+Don't reference the files by `href` or `src`, that beats the purpose of Waiter! You can further improve the experience by compressing these files.
 
 ## Options and Customization 
 
