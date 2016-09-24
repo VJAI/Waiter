@@ -1,23 +1,32 @@
 (function (W, D) {
   
   var Qy = D.body.querySelector.bind(D.body),
-		  options = JSON.parse(Qy('script').getAttribute('data-options') || '{}'),
-	    logo = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAABI1BMVEX///91fz91fz91fz91fz91fz91fz91fz91fz91fz91fz91fz91fz91fz91fz91fz91fz+FXFKFXFKFXFKFXFKFXFJ6dEV9bUl/aUt5dkSFXFKEXVGFXFKFXFKFXFKFXFKFXFKFXFK9z0a9z0a9z0a9z0a9z0a9z0a9z0a9z0a9z0a9z0a9z0a9z0aQc1CWgE6HYFKTeE+9z0aah069z0a5yEehlUyvskmopEu9z0arq0qyuUjB0lLa5Jfv89H////r8MbO23Te56PS3oDJ2Gn3+em9z0bW4YyIY1Hz9t2Zp0A3ODBSVzWIkz20xUWru0N2fzovLy/F1V37/PSQnT9AQjJkazh/iTxbYTZBPDVPQDxaRUBKPTpJTDOisULm7bptdTmjR8+SAAAAYXRSTlMAQFCAIHDA/+CwMPCgYBDQkCCg/8BQ/////0DIkGDg0PAQIFCAsMDQ/5BgQBAwoP/4/+D/8P////9w////////////////oP//////////////////////////////////vD77uwAABFdJREFUeNrtWmtD2jAUDVNERUDFvec2Sx+hLdvsOh0bGzqnTkC087mHc///V6zYFgq2Tfq4yYd5vgEh5/Tm5OYmDUJgyN2bukEuh9hjOj9T8GF2Lj/Pkj43V7iN4kKpzOjpg+gdLLAYjXyxEIHZEjB9ea5AwCxoFMqVAhlzZb78th/n+fLDKaDltxVMQ/AvFuhRAfBBrhAH2c+F8mwsAdmPwVQs/sXsA1CMw19BfANQBLBgHAdApIF5zvxxcgBMGqxw419arlZXlpfo/Z8x//2qgweU/JkvxSuugId04c9nPvYuf/URDf8MwBroCXhM8fgQ5eATl/8pMREXp0AKsWeugNX5Cg96hJ67ApYQKoUn4wrYlsQbgZWbT6XAkrySn0ZgGI6AtykqLYzFYWaxBMhu44XD/3JtrDTL5Z1NMSz3AGtuAJahiYSaKMkKHkCR5bqoavqYBVZB2Rt1h3oCsiSqr0ZzAAyqjMPx2uF/I3qQZFuXjZqWEb2m4CisOwLWg34zJFVIS69LOBruCLwN+11R0z2+SeB/5wrYCG9iinpifhGTsOkKeB/VyGwChd/GB1fAZnQzpZGEXyHz4w06ARiLMPxDAR+JLWU9KX/r0+e2ja3tiFlYpdAabxiG/K0vbQ876QRgs5GA/+vukL+9m1JAHAV77l/2234E9PktjgBs0PqgGch/4H7b6fYOJxKhJ6DfOYr2AeXi5zbfGeNvey48tiyr1wkScNy1rOgY1KkMYDiNv5+M8e9jnwBbwumkB07PBt8TRoFmjay7bT/76U9Gs7BjOeien44EHF3c0Fvn6W2gBRlgq+Xr5NIa4sfPXwP8PvNE9dOnRG8G+ifgeBLqX1kh6P4hTwVSiaB6GWDEf92a6KN/mZwf7xEEuA7Eowx4HdDLRTeA/+qIKhsIVAEYWfA6sJf++a3Hv6DLRoQQGJMCDsL66V/4rXB12Kfkx6ZOEwB87fK3Irrqd47/9nq98+NTavYBosrEUQW+Hey/LBCRkAVfs/3dk+AaID0EYhIEhkq2ICwkmhGAhEmqA8ARVhpJrASEmcBkJaDO1wL2JiFYQI2ZACPpXjQzcPYgxjphIQBHcG2K/3cBAm8B2p2AOwF3AhgKaPAWgHgnIsQ5Fcu8BUiI83Is8i5IarxLMiH6eIrbzkjn7EFme1PcJJ1Rc7IAs51J+AmJznkEWGUCgeaQjMccGIyByS8NMpsHRvQ9BZ5HZGxWRFOne13BeiVmFgKT+MpG4JaEmBzXGjHe2rHPAQx8KNO9OYUbBNpLNQqvKQi8JCiIGg0IBXEuMIAoiHelKXsFewhxVaAgxFWBkuA+V8Pgy097lwmO31awx5d/UCZnYQQpOb9tBIVdAk58qTC6Akh/tzRVEOo6ygDNpE5Qsrpaq4tJJBgqyg7xJWRKfyNBjeMFqYYAIDTpdg1KU0BQ0Gv16ECYGVynJtfNzbocsFIZssiA3JcfNG14pV3UtEbijv4B5CaTybEaYvEAAAAASUVORK5CYII=";
+    options = JSON.parse(Qy('script').getAttribute('data-options') || '{}'),
+    logo = "data:image/png;base64,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";
   
-	D.write('<div class="waiter">\
+  D.write('<div class="waiter {anime}">\
 							<img src="{logo}" />\
 							<div class="progress-bar">\
 								<div class="progress"></div>\
 							</div>\
-				 	 </div>'.replace('{logo}', options.logo || logo));
+				 	 </div>'
+    .replace('{anime}', options.anime || 'slideup')
+    .replace('{logo}', options.logo || logo));
   
-	var waitOver = function () {
-		var waiter = Qy('.waiter'), progress = Qy('.progress');
-		progress.style.animation = 'none';
-		progress.style.width = '100%';
-		waiter.style.top = '-100%';
-	};
-	
-	options.manual ? (W.waitOver = waitOver) : W.addEventListener('load', waitOver, false);
-	
+  
+  var waitOver = function () {
+    var waiter = Qy('.waiter'), progress = Qy('.progress');
+    
+    setTimeout(function () {
+      progress.style.animation = 'none';
+      progress.style.width = '100%';
+      
+      setTimeout(function () {
+        waiter.classList.add('over');
+      }, 500);
+    }, 500);
+  };
+  
+  options.manual ? (W.waitOver = waitOver) : W.addEventListener('load', waitOver, false);
+  
 })(window, document);

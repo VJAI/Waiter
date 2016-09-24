@@ -9,8 +9,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #fff radial-gradient(#fff, #f2f2f2);
-  transition: top 0.5s; }
+  background: #fff radial-gradient(#fff, #f2f2f2); }
+  .waiter.slideup {
+    transition: top 0.5s; }
+    .waiter.slideup.over {
+      top: -100%; }
   .waiter img {
     display: block;
     width: 128px;
@@ -21,12 +24,12 @@
     width: 250px;
     height: 5px;
     border-radius: 5px;
-    border: solid 1px #9DAD31;
+    border: solid 1px #C2BB91;
     animation: glow 1s infinite alternate; }
     .waiter .progress-bar .progress {
       height: 100%;
       width: 0;
-      background-color: #9DAD31;
+      background-color: #C2BB91;
       border-top-right-radius: 2px;
       border-bottom-right-radius: 2px;
       transition: width 2s;
@@ -34,9 +37,9 @@
 
 @keyframes glow {
   from {
-    box-shadow: 0 0 1px #bacb46; }
+    box-shadow: 0 0 1px #d4cfb2; }
   to {
-    box-shadow: 0 0 15px #bacb46; } }
+    box-shadow: 0 0 15px #d4cfb2; } }
 @keyframes jump {
   from {
     width: 0; }

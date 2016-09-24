@@ -1,5 +1,5 @@
 $bgColor: #fff;
-$progressBarColor: #9DAD31;
+$progressBarColor: #C2BB91;
 
 .waiter {
     position: fixed;
@@ -13,7 +13,14 @@ $progressBarColor: #9DAD31;
     align-items: center;
     justify-content: center;
     background: $bgColor radial-gradient($bgColor, darken($bgColor, 5%));
-    transition: top 0.5s;
+
+    &.slideup {
+        transition: top 0.5s;
+
+        &.over {
+            top: -100%;
+        }
+    }
 
     img {
         display: block;
