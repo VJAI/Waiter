@@ -31,7 +31,7 @@ You can pass this option as an attribute in the &lt;script&gt; tag.
 <script src="waiter.js" data-manual="true"></script>
 ```
 
-You can change the base64 logo image and customize the background color of the waiter and progress bar by modifying the below variables in *waiter.scss* file.
+You can change the base64 logo image and customize the background color of the waiter and progress bar by modifying the below variables in *waiter.scss* file. You can convert SCSS to CSS online from [here](http://beautifytools.com/scss-compiler.php).
 
 `$logo` - base64 string of the logo image. You can create base64 string of your JPG, PNG logo image online using this [tool](https://www.base64-image.de/).
 `$bgColor` - Waiter background color
