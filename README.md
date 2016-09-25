@@ -34,7 +34,7 @@ Just 3 steps!
 </body>
 ```
 
-Don't reference the files by `href` or `src`, that beats the purpose of Waiter! You can further improve the experience by compressing these files.
+Don't reference the files by `href` or `src`, that beats the purpose of Waiter! You can further improve the experience by compression.
 
 ## Options and Customization 
 
@@ -58,7 +58,7 @@ You can change the base64 logo image and customize the background color of the w
 
 As default when the wait is over the waiter slides up. You can change the animation by overriding the `anime` and `trigger` CSS classes.
 
-Below are couple of different animations you can apply.
+Below are couple of different animations you can try.
 
 #### Fade
 
@@ -85,4 +85,4 @@ Below are couple of different animations you can apply.
 }
 ```
 
-If you are not happy with any of these you can apply your own!
+If you are not happy with the above you can roll your own!
