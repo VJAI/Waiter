@@ -85,4 +85,4 @@ Below are couple of different animations you can try.
 }
 ```
 
-If you are not happy with the above you can roll your own!
+If you are not happy with the above animations you can roll your own!
