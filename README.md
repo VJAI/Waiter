@@ -4,9 +4,18 @@ A simple page pre-loader built using vanilla JS and CSS3. Please check the [demo
 
 ## How to use
 
-Just 2 steps!
+Just 3 steps!
 
-1) Copy everything from *waiter.css* and drop it inline with &lt;style&gt; element under &lt;head&gt;.
+1) Move your application stylesheets and scripts to the end of &lt;body&gt;. Note, for the stylesheets you should specify `property` attribute as `stylesheet` to pass the HTML5 validation ([Ref](http://stackoverflow.com/a/22195559/741616)).
+
+```html
+...    
+    <link rel="stylesheet" property="stylesheet" href="app.min.css" >
+    <script src="app.min.js"></script>
+</body>
+```
+
+2) Copy everything from *waiter.css* and drop it inline with &lt;style&gt; element under &lt;head&gt;.
 
 ```html
 <style>
@@ -14,7 +23,7 @@ Just 2 steps!
 </style>
 ```
 
-2) Copy everything from *waiter.js* and drop it inline with &lt;script&gt; element and it should be the first child of the &lt;body&gt;.
+3) Copy everything from *waiter.js* and drop it inline with &lt;script&gt; element and it should be the first child of the &lt;body&gt;.
 
 ```html
 <body>
