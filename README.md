@@ -1,6 +1,6 @@
 # Waiter
 
-A simple page pre-loading screen built using vanilla JS and CSS3. Please check the [demo](http://prideparrot.com/demos/waiter/demo1.html)!
+A simple page pre-loading screen with logo image and progress bar built using vanilla JS and CSS3. Please check the [demo](http://prideparrot.com/demos/waiter/demo1.html)!
 
 ## How to use
 
