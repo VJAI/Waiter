@@ -1,6 +1,6 @@
 # Waiter
 
-A simple page pre-loader built using vanilla JS and CSS3. Please check the [demo](http://prideparrot.com/demos/waiter/index.html)!
+A simple page pre-loading screen built using vanilla JS and CSS3. Please check the [demo](http://prideparrot.com/demos/waiter/demo1.html)!
 
 ## How to use
 
@@ -60,7 +60,8 @@ As default when the wait is over the waiter slides up. You can change the animat
 
 Below are couple of different animations you can try.
 
-#### Fade
+#### Fade 
+[demo](http://prideparrot.com/demos/waiter/demo2.html)
 
 ```css
 &.anime {
@@ -73,6 +74,7 @@ Below are couple of different animations you can try.
 ```
 
 #### Vapour
+[demo](http://prideparrot.com/demos/waiter/demo3.html)
 
 ```css
 &.anime {
