@@ -1,6 +1,6 @@
 # Waiter
 
-A simple page pre-loading screen with logo image and progress bar built using vanilla JS and CSS3. Please check the [demo](http://prideparrot.com/demos/waiter/demo1.html)!
+A simple pre-loading screen with logo image and progress bar built using pure JS and CSS3. Please check the [demo](http://prideparrot.com/demos/waiter/demo1.html)!
 
 ## How to use
 
@@ -34,11 +34,11 @@ Just 3 steps!
 </body>
 ```
 
-Don't reference the files by `href` or `src`, that beats the purpose of Waiter! You can further improve the experience by compression.
+Don't reference the files by `href` or `src` and that beats the purpose of Waiter! You can further improve the experience by compression.
 
 ## Options and Customization 
 
-`manual` - Boolean, default `false`. When supplied `true`, removing the waiter has to be manually called by `window.waitOver()`.
+`manual` - boolean, defaults to `false`. When supplied `true`, removing the waiter has to be manually called by `window.waitOver()`.
 
 You can pass this option as an attribute in the &lt;script&gt; tag.
 
@@ -58,7 +58,7 @@ You can change the base64 logo image and customize the background color of the w
 
 As default when the wait is over the waiter slides up. You can change the animation by overriding the `anime` and `trigger` CSS classes.
 
-Below are couple of different animations you can try.
+Below are couple of different animations you could try.
 
 #### Fade 
 [demo](http://prideparrot.com/demos/waiter/demo2.html)
@@ -87,4 +87,4 @@ Below are couple of different animations you can try.
 }
 ```
 
-If you are not happy with the above animations you can roll your own!
+If you are not happy with the above animations you can roll your own :)
