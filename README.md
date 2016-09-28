@@ -1,6 +1,10 @@
 # Waiter
 
-A simple pre-loading screen with logo image and progress bar built using pure JS and CSS3. Please check the [demo](http://prideparrot.com/demos/waiter/demo1.html)!
+The front-end code increases monumentally day-by-day. In enterprise apps, I see vendor JavaScript files spikes to MBs even after compression. Loading these huge files gives a very unpleasant experience for the end-user because they've to just stare the blank white screen for a while! Sometimes it's just difficult to cut down the size and in those cases it's better to provide a nice welcome screen to release the tension of the user.
+ 
+Waiter is a simple pre-loading screen built with pure JS and CSS3. It don't have any dependency with 3rd party libraries. Waiter provides option to display your logo image with a nice fake progressbar that gives an illusion the page is loading soon!
+ 
+Please check the [demo](http://prideparrot.com/demos/waiter/demo1.html)!
 
 ## How to use
 

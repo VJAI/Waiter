@@ -24,6 +24,6 @@
     }, t);
   };
   
-  manual === 'true' ? (W.waitOver = waitOver) : W.addEventListener('load', waitOver, false);
+  return manual === 'true' ? (W.waitOver = waitOver) : W.addEventListener('load', waitOver, false);
   
 })(window, document);
