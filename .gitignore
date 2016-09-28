@@ -1,2 +1,4 @@
 .idea
-waiter.css.map
+node_modules
+dist
+npm-debug.log*

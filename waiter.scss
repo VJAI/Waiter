@@ -2,77 +2,93 @@ $logo: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAABv1
 $bgColor: #fff;
 $progressBarColor: #C2BB91;
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .waiter {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    z-index: 5000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: $bgColor radial-gradient($bgColor, darken($bgColor, 5%));
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 5000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $bgColor radial-gradient($bgColor, darken($bgColor, 5%));
 
-    &.anime {
-        transition: top 0.5s;
+  &.waiter--anime {
+    transition: top 0.5s;
 
-        &.trigger {
-            top: -100%;
+    &.waiter--anime-trigger {
+      top: -100%;
+    }
+  }
+
+  .waiter__logo {
+    width: 128px;
+    height: 128px;
+    background-image: url($logo);
+    position: relative;
+    top: -30px;
+  }
+
+  .waiter__progressbar {
+    width: 250px;
+    height: 5px;
+    border-radius: 5px;
+    border: solid 1px $progressBarColor;
+    animation: glow 1s infinite alternate;
+
+    .waiter__progress {
+      height: 100%;
+      width: 0;
+      background-color: $progressBarColor;
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+
+      &.waiter__progress--anime0 {
+        animation: progress-start 150ms linear forwards, progress-move 20s steps(25) forwards 500ms;
+      }
+
+      &.waiter__progress--anime1 {
+        animation: progress-end 0.25s linear forwards;
+      }
+
+      @keyframes glow {
+        from {
+          box-shadow: 0 0 1px lighten($progressBarColor, 10%);
         }
-    }
-
-    .logo {
-        width: 128px;
-        height: 128px;
-        background-image: url($logo);
-        position: relative;
-        top: -30px;
-    }
-
-    .progress-bar {
-        width: 250px;
-        height: 5px;
-        border-radius: 5px;
-        border: solid 1px $progressBarColor;
-        animation: glow 1s infinite alternate;
-
-        .progress {
-            height: 100%;
-            width: 0;
-            background-color: $progressBarColor;
-            border-top-right-radius: 2px;
-            border-bottom-right-radius: 2px;
-            transition: width 2s;
-            animation: jump 150ms forwards linear, crawl 20s steps(25) forwards 500ms;
+        to {
+          box-shadow: 0 0 10px lighten($progressBarColor, 10%);
         }
-    }
-}
+      }
 
-@keyframes glow {
-    from {
-        box-shadow: 0 0 1px lighten($progressBarColor, 10%);
-    }
-    to {
-        box-shadow: 0 0 15px lighten($progressBarColor, 10%);
-    }
-}
+      @keyframes progress-start {
+        from {
+          width: 0;
+        }
+        to {
+          width: 20%;
+        }
+      }
 
-@keyframes jump {
-    from {
-        width: 0;
-    }
-    to {
-        width: 20%;
-    }
-}
+      @keyframes progress-move {
+        from {
+          width: 20%;
+        }
+        to {
+          width: 95%;
+        }
+      }
 
-@keyframes crawl {
-    from {
-        width: 20%;
+      @keyframes progress-end {
+        to {
+          width: 100%;
+        }
+      }
     }
-    to {
-        width: 95%;
-    }
+  }
 }
