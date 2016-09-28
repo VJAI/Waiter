@@ -6,6 +6,8 @@ Waiter is a simple pre-loading screen built with pure JS and CSS3. It don't have
  
 Please check the [demo](http://prideparrot.com/demos/waiter/demo1.html)!
 
+![Waiter](https://raw.githubusercontent.com/VJAI/Waiter/master/images/waiter.png)
+
 ## How to use
 
 To use Waiter you've to follow the below steps!
