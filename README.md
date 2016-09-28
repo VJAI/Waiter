@@ -115,3 +115,13 @@ Below are couple of different animations you could try.
 ```
 
 If you are not happy with the above animations you can roll your own :)
+
+## Development & Contribution
+
+We've used grunt to simplify development and the build. The following are the couple of grunt command you should know.
+
+`grunt` - Creates a server and launches the *index.html* page in the browser. Whenever you make any change to the JS or SCSS file, the page will be automatically refreshed with the changes.
+
+`grunt build` - Create a new directory called *dist* and copy the original and minified JS and CSS files into it.
+
+There are more improvements you can do to Waiter. How about making the screen content dynamic? Instead of always displaying the logo image and the progress bar you can also display some important information in the Waiter like events and other things. Feel free to fork and improve!

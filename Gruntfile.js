@@ -48,13 +48,13 @@ module.exports = function (grunt) {
         expand: true,
         dot: true,
         src: 'waiter.js',
-        dest: '<%= config.dist %>/waiter.js'
+        dest: '<%= config.dist %>'
       },
       css: {
         expand: true,
         dot: true,
         src: 'waiter.css',
-        dest: '<%= config.dist %>/waiter.css'
+        dest: '<%= config.dist %>'
       }
     },
   
