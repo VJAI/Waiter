@@ -1,11 +1,12 @@
 (function (W, D) {
   
-  var Qy = D.querySelector.bind(D), manual = D.body.getAttribute('data-manual');
+  var Qy = D.querySelector.bind(D), B = D.body, manual = B.getAttribute('data-manual'), empty = function () {};
   
-  D.body.classList.add('no-scroll');
+  B.classList.add('wait');
   D.write('<div class="waiter waiter--anime"><div class="waiter__logo"></div><div class="waiter__progressbar"><div class="waiter__progress waiter__progress--anime0"></div></div></div>');
   
-  var waitOver = function () {
+  W.waitOver = function () {
+    waitOver = empty;
     var waiter = Qy('.waiter'), progress = Qy('.waiter__progress'), t = 500;
     
     setTimeout(function () {
@@ -16,7 +17,7 @@
       
       setTimeout(function () {
         waiter.addEventListener('transitionend', function () {
-          D.body.classList.remove('no-scroll');
+          B.classList.remove('wait');
         }, false);
         
         waiter.classList.add('waiter--anime-trigger');
@@ -24,6 +25,6 @@
     }, t);
   };
   
-  return manual === 'true' ? (W.waitOver = waitOver) : W.addEventListener('load', waitOver, false);
-  
+  if (manual === 'true') return;
+  W.addEventListener('load', waitOver, false);
 })(window, document);
