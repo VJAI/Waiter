@@ -2,6 +2,8 @@
   "name": "Waiter",
   "description": "A simple pre-loading screen with logo image and progress bar built using pure JS and CSS3",
   "version": "1.0.0",
+  "author": "Vijaya Anand (http://prideparrot.com)",
+  "license": "MIT",
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-clean": "^1.0.0",
