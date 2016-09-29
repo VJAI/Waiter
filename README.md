@@ -4,7 +4,7 @@ The front-end code increases monumentally day-by-day. In enterprise apps, I see 
  
 Waiter is a simple pre-loading screen built with pure JS and CSS3. It don't have any dependency with any 3rd party library. Waiter provides options to display your own logo image with a nice fake progressbar that gives an illusion the page is gonna load soon!
  
-Let's take a look at the [demo](http://prideparrot.com/demos/waiter/demo1.html)!
+[DEMO](http://prideparrot.com/demos/waiter/demo1.html)!
 
 ![Waiter](https://raw.githubusercontent.com/VJAI/Waiter/master/images/waiter.png)
 
@@ -31,7 +31,7 @@ npm install https://github.com/VJAI/Waiter.git --save
 
 ```html
 <style>
-    [content from waiter.css]
+    [content from waiter.min.css]
 </style>
 ```
 
@@ -44,7 +44,7 @@ If you are not using any build tool like grunt or gulp then you've to do this ma
 ```html
 <body>
     <script>
-        [content from waiter.js]
+        [content from waiter.min.js]
     </script>
     [...other content]
 </body>
@@ -120,11 +120,9 @@ If you are not happy with the above animations you are free to roll your own :)
 
 ## Tested Browsers
 
-- Chrome
-- Safari
-- IE11
+![Chrome](https://raw.githubusercontent.com/VJAI/Waiter/master/images/chrome.png) ![Firefox](https://raw.githubusercontent.com/VJAI/Waiter/master/images/firefox.png) ![Safari](https://raw.githubusercontent.com/VJAI/Waiter/master/images/safari.png) ![IE11](https://raw.githubusercontent.com/VJAI/Waiter/master/images/ie.png)
 
-Yet to test in IE10 and IE9 and fix if there issues. No plan for IE8!
+Tested only in IE11. Yet to test in IE10 and IE9 and fix if there issues. No plan for IE8!
 
 ## Development & Contribution
 
