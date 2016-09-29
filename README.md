@@ -120,7 +120,7 @@ If you are not happy with the above animations you are free to roll your own :)
 
 ## Tested Browsers
 
-![Chrome](https://raw.githubusercontent.com/VJAI/Waiter/master/images/chrome.png) ![Firefox](https://raw.githubusercontent.com/VJAI/Waiter/master/images/firefox.png) ![Safari](https://raw.githubusercontent.com/VJAI/Waiter/master/images/safari.png) ![IE11](https://raw.githubusercontent.com/VJAI/Waiter/master/images/ie.png)
+![Chrome](https://raw.githubusercontent.com/VJAI/Waiter/master/images/chrome.png) ![Firefox](https://raw.githubusercontent.com/VJAI/Waiter/master/images/firefox.png) ![Safari](https://raw.githubusercontent.com/VJAI/Waiter/master/images/safari.png) ![IE11](https://raw.githubusercontent.com/VJAI/Waiter/master/images/IE.png)
 
 Tested only in IE11. Yet to test in IE10 and IE9 and fix if there issues. No plan for IE8!
 
