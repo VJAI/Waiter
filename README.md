@@ -27,7 +27,7 @@ npm install https://github.com/VJAI/Waiter.git --save
 </body>
 ```
 
-3) Copy everything from *waiter.css* and drop it inline with &lt;style&gt; element under &lt;head&gt;.
+3) Copy everything from *waiter.min.css* from *dist* and drop it inline with &lt;style&gt; element under &lt;head&gt;.
 
 ```html
 <style>
@@ -39,7 +39,7 @@ If you are using build tool like grunt or gulp you don't have to do this manuall
 
 If you are not using any build tool like grunt or gulp then you've to do this manually.
 
-4) Copy everything from *waiter.js* and drop it inline with &lt;script&gt; element and it should be the first child of the &lt;body&gt;.
+4) Copy everything from *waiter.min.js* from *dist*  and drop it inline with &lt;script&gt; element and it should be the first child of the &lt;body&gt;.
 
 ```html
 <body>
