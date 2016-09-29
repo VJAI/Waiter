@@ -118,6 +118,14 @@ Below are couple of different animations you could try.
 
 If you are not happy with the above animations you can roll your own :)
 
+## Tested Browsers
+
+- Chrome
+- Safari
+- IE11
+
+Yet to test in IE10 and IE9 and fix if there issues. No plan for IE8!
+
 ## Development & Contribution
 
 First you've to make sure Grunt CLI is installed globally `npm install -g grunt-cli` and then run `npm install` to install all the dependencies required by the project.
