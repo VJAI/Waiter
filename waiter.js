@@ -1,12 +1,12 @@
 (function (W, D) {
   
-  var Qy = D.querySelector.bind(D), B = D.body, manual = B.getAttribute('data-manual'), empty = function () {};
+  var Qy = D.querySelector.bind(D), B = D.body, manual = B.getAttribute('data-manual'), noop = function () {};
   
   B.classList.add('wait');
   D.write('<div class="waiter waiter--anime"><div class="waiter__logo"></div><div class="waiter__progressbar"><div class="waiter__progress waiter__progress--anime0"></div></div></div>');
   
   W.waitOver = function () {
-    waitOver = empty;
+    waitOver = noop;
     var waiter = Qy('.waiter'), progress = Qy('.waiter__progress'), t = 500;
     
     setTimeout(function () {
