@@ -122,7 +122,7 @@ If you are not happy with the above animations you are free to roll your own :)
 
 ![Chrome](https://raw.githubusercontent.com/VJAI/Waiter/master/images/chrome.png) ![Firefox](https://raw.githubusercontent.com/VJAI/Waiter/master/images/firefox.png) ![Safari](https://raw.githubusercontent.com/VJAI/Waiter/master/images/safari.png) ![IE11](https://raw.githubusercontent.com/VJAI/Waiter/master/images/IE.png)
 
-Tested fine in Edge, IE11 and IE10. Currently have some issues in IE9 which will be taken care soon! No plan for IE8.
+Tested fine in Edge, IE11 and IE10. Currently have some issues in IE9 which will be taken care soon. No plan for IE8!
 
 ## Development & Contribution
 
