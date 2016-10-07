@@ -12,7 +12,7 @@ module.exports = function (grunt) {
   grunt.initConfig({
     
     config: config,
-  
+    
     jshint: {
       src: 'waiter.js'
     },
@@ -42,7 +42,22 @@ module.exports = function (grunt) {
         }
       }
     },
-  
+    
+    postcss: {
+      options: {
+        processors: [
+          require('autoprefixer')({
+            browsers: ['last 2 versions']
+          })
+        ]
+      },
+      dist: {
+        files: {
+          'waiter.css': 'waiter.css'
+        }
+      }
+    },
+    
     copy: {
       js: {
         expand: true,
@@ -57,7 +72,7 @@ module.exports = function (grunt) {
         dest: '<%= config.dist %>'
       }
     },
-  
+    
     cssmin: {
       dist: {
         files: {
@@ -65,7 +80,7 @@ module.exports = function (grunt) {
         }
       }
     },
-  
+    
     processhtml: {
       dist: {
         files: {
@@ -73,7 +88,7 @@ module.exports = function (grunt) {
         }
       }
     },
-  
+    
     connect: {
       server: {
         options: {
@@ -101,9 +116,9 @@ module.exports = function (grunt) {
       
       scss: {
         files: 'waiter.scss',
-        tasks: ['sass', 'processhtml']
+        tasks: ['sass', 'postcss', 'processhtml']
       },
-  
+      
       livereload: {
         options: {
           livereload: true
@@ -113,6 +128,6 @@ module.exports = function (grunt) {
     }
   });
   
-  grunt.registerTask('default', ['jshint', 'sass', 'processhtml', 'connect', 'watch']);
-  grunt.registerTask('build', ['jshint', 'clean', 'sass', 'copy', 'uglify', 'cssmin']);
+  grunt.registerTask('default', ['jshint', 'sass', 'postcss', 'processhtml', 'connect', 'watch']);
+  grunt.registerTask('build', ['jshint', 'clean', 'sass', 'postcss', 'copy', 'uglify', 'cssmin']);
 };

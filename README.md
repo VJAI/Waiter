@@ -128,11 +128,11 @@ Tested fine in Edge, IE11 and IE10. Currently have some issues in IE9 which will
 
 First you've to make sure Grunt CLI is installed globally `npm install -g grunt-cli` and then run `npm install` to install all the dependencies required by the project.
 
-The following are the couple of grunt commands you need to know.
+The following are the couple of npm commands you need to know.
 
-`grunt` - Creates a server and launches the *index.html* page in the browser. Whenever you make any change to the JS or SCSS file, the page will be automatically refreshed with the changes.
+`npm start` - Creates a server and launches the *index.html* page in the browser. Whenever you make any change to the JS or SCSS file, the page will be automatically refreshed with the changes.
 
-`grunt build` - Compiles the *waiter.scss* file to *waiter.css* file, minifies the JS and CSS files and finally copies them to the *dist* folder.
+`npm build` - Compiles the *waiter.scss* file to *waiter.css* file, minifies the JS and CSS files and finally copies them to the *dist* folder.
 
 There are more improvements you can do to Waiter. How about making the screen content dynamic? Instead of always displaying the logo image and the progress bar you can display dynamic information like events and other things. Feel free to fork and improve!
 

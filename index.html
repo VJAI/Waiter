@@ -12,10 +12,14 @@
   left: 0;
   top: 0;
   z-index: 5000;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   background: #fff radial-gradient(#fff, #f2f2f2); }
   .waiter.waiter--anime {
     transition: top 0.5s; }
@@ -67,13 +71,13 @@
 <script>
 (function (W, D) {
   
-  var Qy = D.querySelector.bind(D), B = D.body, manual = B.getAttribute('data-manual'), empty = function () {};
+  var Qy = D.querySelector.bind(D), B = D.body, manual = B.getAttribute('data-manual'), noop = function () {};
   
   B.classList.add('wait');
   D.write('<div class="waiter waiter--anime"><div class="waiter__logo"></div><div class="waiter__progressbar"><div class="waiter__progress waiter__progress--anime0"></div></div></div>');
   
   W.waitOver = function () {
-    waitOver = empty;
+    waitOver = noop;
     var waiter = Qy('.waiter'), progress = Qy('.waiter__progress'), t = 500;
     
     setTimeout(function () {
