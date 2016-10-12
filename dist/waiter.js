@@ -6,7 +6,7 @@
   D.write('<div class="waiter waiter--anime"><div class="waiter__logo"></div><div class="waiter__progressbar"><div class="waiter__progress waiter__progress--anime0"></div></div></div>');
   
   W.waitOver = function () {
-    waitOver = noop;
+    W.waitOver = noop;
     var waiter = Qy('.waiter'), progress = Qy('.waiter__progress'), t = 500;
     
     setTimeout(function () {
